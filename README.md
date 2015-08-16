@@ -1,7 +1,7 @@
 DASHSERV
 --------
 
-* What is DashServ? *
+What is DashServ?
 
 DashServ is an all-in-one command line productivity suite that is written for
 geeks, linux fans and for fans of the command line. It will help you maintain
@@ -11,7 +11,7 @@ is your personal messenger, assistant, personal notifier, web scraper, and
 more. Free, open-source, and cross-platform.
 
 
-* Requirements *
+Requirements
 
 All requirements can be installed via pip, easy_install or manually via python.
 
@@ -22,7 +22,7 @@ All requirements can be installed via pip, easy_install or manually via python.
 * json
 
 
-* Planned Features *
+Planned Features
 
 * Easy to read and well documented code
 * Google Calendar Integration
@@ -32,7 +32,7 @@ All requirements can be installed via pip, easy_install or manually via python.
 * Furcadia Integration
 
 
-* Special Thanks *
+Special Thanks
 
 *GitHub
 *Cloud9 (c9.io) -- Developed inside of a C9 DigitalOcean enivornment.
