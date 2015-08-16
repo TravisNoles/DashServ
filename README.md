@@ -34,9 +34,9 @@ Planned Features
 
 Special Thanks
 
-*GitHub
-*Cloud9 (c9.io) -- Developed inside of a C9 DigitalOcean enivornment.
-*DigitalOcean -- Use of their API and awesome documentation.
-*StackOverflow - Every programmer's best friend.
-*hackerearth - For creating an awesome python requests tutorial.
-*python-guide
+* GitHub
+* Cloud9 (c9.io) -- Developed inside of a C9 DigitalOcean enivornment.
+* DigitalOcean -- Use of their API and awesome documentation.
+* StackOverflow - Every programmer's best friend.
+* hackerearth - For creating an awesome python requests tutorial.
+* python-guide
