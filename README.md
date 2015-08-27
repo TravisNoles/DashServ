@@ -15,6 +15,7 @@ Requirements
 
 All requirements can be installed via pip, easy_install or manually via python.
 
+<<<<<<< HEAD
 * python2 (tested), (python3 not tested)
 * requests
 * docopt
@@ -28,10 +29,18 @@ Current Features
 
 * Partial DigitalOcean Support - Create, list and destroy servers. No snapshots yet.
 * Basic commands
+=======
+* python2 or python3
+* Selenium
+* requests
+* docopt
+* json
+>>>>>>> fb937a92ba495b2f6ebc378d3c130b35b19fa26d
 
 
 Planned Features
 
+<<<<<<< HEAD
 * Game Server Support - Terraria, Minecraft, Furcadia
 * Easy to read and well documented code
 * Google Calendar Integration
@@ -39,10 +48,19 @@ Planned Features
 * Lookups: IMDB, Google Dictionary, code snippets
 * Social Networking: Facebook
 * Pushbullet integration - Will send uptime notifications
+=======
+* Easy to read and well documented code
+* Google Calendar Integration
+* Lookups: IMDB, Google Dictionary, code snippets
+* DigitalOcean integration
+* Social Networking: Facebook
+* Furcadia Integration
+>>>>>>> fb937a92ba495b2f6ebc378d3c130b35b19fa26d
 
 
 Special Thanks
 
+<<<<<<< HEAD
 *docopt - Super easy command line builder.
 *GitHub - Hosting everything you're looking at right now.
 *Cloud9 (c9.io) -- Developed inside of a C9 DigitalOcean web environment.
@@ -50,3 +68,11 @@ Special Thanks
 *StackOverflow - Every programmer's best friend.
 *hackerearth - For creating an awesome python requests tutorial.
 *python-guide
+=======
+* GitHub
+* Cloud9 (c9.io) -- Developed inside of a C9 DigitalOcean enivornment.
+* DigitalOcean -- Use of their API and awesome documentation.
+* StackOverflow - Every programmer's best friend.
+* hackerearth - For creating an awesome python requests tutorial.
+* python-guide
+>>>>>>> fb937a92ba495b2f6ebc378d3c130b35b19fa26d
