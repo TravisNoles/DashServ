@@ -1,5 +1,7 @@
-DashServ v0.1.0--alpha
+DashServ v0.1.0-pre1
 --------
+
+Please Note: This is an pre-release, and is currently unstable.
 
 What is DashServ?
 
