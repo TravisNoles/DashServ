@@ -1,0 +1,16 @@
+
+
+v0.1.0 - 8/15/15 - "PushBoat" - Initial Release
+
+
+Authenticate with digitalocean
+Create new digitalocean droplets.
+Start digitalocean droplets.
+Halt digitalocean droplets
+Shutdown digitalocean droplets.
+Destroy digitalocean droplets.
+Shutdown digitalocean droplets.
+Server configuration files.
+Default values for digitalocean in config.
+Added reference to future script support.
+Added reference for future todo support.
