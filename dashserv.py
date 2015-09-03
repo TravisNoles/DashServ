@@ -21,7 +21,8 @@ Examples:
 """
 
 from docopt import docopt
-import lib.digitalocean
+
+
 
 if __name__ == '__main__':
     arguments = docopt(__doc__, version='DashServ 0.1.0')

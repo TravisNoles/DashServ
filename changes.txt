@@ -1,6 +1,22 @@
+v0.1.1 - "PushBoat" (Unstable Pre-Release Build)
+
+Added digitalocean API documentation.
+Improved code organization signifcatly.
+Restructured files and folder layout.
+Moved lib into providers folder.
+Versioning will no longer use tags, but major releases will have names (tags)
+Misc improvements.
+Settings will now be stored in the user's home directory and created via template.
+Created seperate authenticated function headers, allows to programaically pull the header.
+Added set user's home directory path in common.
+Set digitalocean api url.
+Added external library, arrow. To better and easily handle time conversion.
+Updated readme, included why use this software.
+List digitalocean droplet actions.
 
 
-v0.1.0 - 8/15/15 - "PushBoat" - Initial Release
+
+v0.1.0-pre1 - 8/15/15 - "PushBoat" - Initial Release
 
 
 Authenticate with digitalocean
