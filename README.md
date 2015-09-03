@@ -1,6 +1,15 @@
 DashServ v0.1.0-pre1
 --------
 
+<<<<<<< HEAD
+=======
+Please Note: This is an pre-release, and is currently unstable.
+
+https://trello.com/b/liOZfwB8/dashserv <--- Trello Board (for ideas and progress)
+
+
+
+>>>>>>> 24f25784b44db7d00aec5d43080b82f7dce7daed
 What is DashServ?
 
 DashServ is an all-in-one command line productivity suite that is written for
