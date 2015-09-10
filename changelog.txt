@@ -9,6 +9,11 @@ but inside the web application rather than a terminal. This aligns better with w
 I want to accomplish for the app while making it user-friendly and easy.
 
 
+* Added Django Support and initialized files with litesql database file.
+* Rewrote digitalocean into one file, added old code for reference.
+
+
+
 v0.1.1 - "PushBoat" (Unstable Pre-Release Build)
 
 Added digitalocean API documentation.

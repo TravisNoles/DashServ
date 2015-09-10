@@ -118,12 +118,3 @@ def createDroplet():
     
     #Return created droplet information.
     return r.text
-
-
-
-
-#Debug
-
-
-test = getSize()
-print test
