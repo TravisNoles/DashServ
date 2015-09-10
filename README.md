@@ -1,5 +1,4 @@
-DashServ v0.1.0-pre1
---------
+DashServ v0.1.2
 
 Please Note: This is an pre-release, and is currently unstable.
 

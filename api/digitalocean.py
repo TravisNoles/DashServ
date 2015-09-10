@@ -6,10 +6,9 @@ import yaml
 
 __HOME = expanduser("~")
 __SETTINGS_FILE = __HOME + "/" + "settings.yaml"
-__BASEURL = "https://api.digitalocean.com/v2/"
-__APITOKEN = ""
+__BASEURL = "https://api.digitalocean.com/v2"
 
-def getHeaders(data=""):
+def getHeaders():
     headers = ""
     
     #Open and read config file.
@@ -25,6 +24,8 @@ def getHeaders(data=""):
     #Close the file (to prevent memory leaks obv)
     configFile.close()
     
+    
+    
     return headers;
 
 
@@ -37,12 +38,39 @@ def getData(suburl):
     
     return data;
     
+#Get a specific size (based on slug.)
+def getSize(slug):
+    sizesJson = getData('/sizes')
+    
+    # Memory Selection
+    if (slug=="512mb"):
+        access = 0
+        
+    if (slug=="1gb"):
+        access = 1
+        
+    if (slug=="2gb"):
+        access = 2
+        
+    if (slug=="4gb"):
+        access = 3    
+        
+    if (slug=="8gb"):
+        access = 4
+        
+    if (slug=="16gb"):
+        access = 5
+        
+    if (slug=="32gb"):
+        access = 6    
+        
+    if (slug=="48gb"):
+        access = 7    
+        
+    if (slug=="64gb"):
+        access = 8    
 
-def getSizes():
-    
-    sizesJson = getData('sizes')
-    return sizesJson['sizes']
-    
+    return sizesJson['sizes'][access]
     
     
     #List all sizes as slugs string. To call/use: can use for loop
@@ -58,34 +86,13 @@ def getSizes():
     #     for index in range(0, maxSizes):
     #         sizes['data'].append(sizesJson['sizes'][index]['slug'])
             
-    # if (memory==512):
-    #     access = 0
+
         
-    # if (memory==1024):
-    #     access = 1
-        
-    # if (memory==2048):
-    #     access = 2
-        
-    # if (memory==4096):
-    #     access = 3    
-        
-    # if (memory==8192):
-    #     access = 4
-        
-    # if (memory==16384):
-    #     access = 5
-        
-    # if (memory==32768):
-    #     access = 6    
-        
-    # if (memory==49152):
-    #     access = 7    
-        
-    # if (memory==65536):
-    #     access = 8    
-        
-#List Droplets
+#List droplet based on hostname.
+def getDroplet(hostname):
+    data = getData("droplets")
+    return r.text()
+    
     
 
 #Create Droplets
@@ -111,3 +118,12 @@ def createDroplet():
     
     #Return created droplet information.
     return r.text
+
+
+
+
+#Debug
+
+
+test = getSize()
+print test
