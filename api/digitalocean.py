@@ -3,6 +3,7 @@ import requests
 import json
 from os.path import expanduser
 import yaml
+import six
 
 __HOME = expanduser("~")
 __SETTINGS_FILE = __HOME + "/" + "settings.yaml"
@@ -23,9 +24,7 @@ def getHeaders():
     
     #Close the file (to prevent memory leaks obv)
     configFile.close()
-    
-    
-    
+
     return headers;
 
 
@@ -88,33 +87,61 @@ def getSize(slug):
             
 
         
-#List droplet based on hostname.
-def getDroplet(hostname):
-    data = getData("droplets")
-    return r.text()
+#Return droplet information based on droplet number (locally)
+#Get droplet by localID (which will be stored in the database
+def getAllDroplets():
+    data = getData("/droplets")
+    return data['droplets']
+    
+def getNumberOfDroplets():
+    data = getData("/droplets")
+    return data['meta']['total']
+
+#Get all droplet ids, return list.
+def getAllDropletIDs():
+    data = getData("/droplets")
+    #Get number of droplets.
+    numberOfDroplets = getNumberOfDroplets()
+    allDropletIDs = []
+    
+    for index in range(0, numberOfDroplets):
+        #cycle through droplets to get IDs.
+        allDropletIDs.append(data['droplets'][index]['id'])
+    return allDropletIDs
+    
+
+def removeDroplet(dropletID):
+    data = getData("/droplets")
+    
+    apiurl = __BASEURL + "/droplets/" + repr(dropletID)
+    headers = getHeaders()
+    r = requests.delete(apiurl, headers=headers)
     
     
+    return r.status_code
+    
+def createDroplet(name, region, size, image, ssh_keys, backups, ipv6, user_data, private_networking):
 
-#Create Droplets
-#def createDroplet(hostname, region, size, image, ssh_keys, backups, ipv6, user_data, private_networking):
-
-def createDroplet():
-
-    name = "example222"
-    region = "nyc3"
-    size = "512mb"
-    image = "ubuntu-14-04-x64" # or int by id (snapshots)
-    ssh_keys = []
-    backups = "False"
-    ipv6 = False
-    private_networking = False
-    user_data = ""
+    #Debug - set droplet info manually.
+    #name = "example222"
+    #region = "nyc3"
+    #size = "512mb"
+    # image = "ubuntu-14-04-x64" # or int by id (snapshots)
+    # ssh_keys = []
+    # backups = "False"
+    # ipv6 = False
+    # private_networking = False
+    # user_data = ""
     
     payload = {'name': name, "region": region, "size": size, "image": image, "ssh_keys": ssh_keys, "backups": backups, "ipv6": ipv6, "user_data": user_data, "private_networking": private_networking}
     
-    apiurl = __BASEURL + 'droplets'
+    apiurl = __BASEURL + '/droplets'
     headers = getHeaders()
     r = requests.post(apiurl, json=payload, headers=headers)
     
     #Return created droplet information.
+    
+    print "Check your email for root password information."
+    
+    
     return r.text
