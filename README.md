@@ -17,18 +17,27 @@ DashServ is human-friendly, and designed to be easy to use as possible.
 Developer Requirements
 -------------------------
 
-* python2
+All can be installed with pip (besides python) or manually.
+
+* python2 (python3 is not supported!)
 * virtualenv
 * requests
 * arrow
 * json
+* pyyaml
+
+
+Request to be added (to edit):
+
+Trello Board: https://trello.com/b/liOZfwB8/dashserv
+Google Docs Planning Document: https://docs.google.com/document/d/1pOl8V6DQUElvXUtWVaSnWnb1T09iD9Y1yrG-7OxGYvE/edit?usp=sharing
 
 
 End-User Requirements
 -------------
 
 All requirements can be installed via pip, easy_install or manually via python.
-* python2 (tested), (python3 not tested)
+* python2
 * requests
 * json
 * arrow
