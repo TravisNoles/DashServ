@@ -1,6 +1,17 @@
 DASHSERV CHANGELOG
 
 
+v0.1.3 - (Pre-Release) - "Web Flask"
+
+*Reformatting codebase again, re-branching into flask this time. Django just
+wasn't letting me do what I needed it to do.
+
+* Flask-Only support, removed references to Django and old code.
+* Re-structured app layout.
+* Now using a virtual development environment with python-virtualenv
+* Updated Readme
+
+
 v0.1.2 - (Pre-Release) - "Web"
 
 *Reformatted entire codebase. DashServ is now going to use python and django.
@@ -11,7 +22,9 @@ I want to accomplish for the app while making it user-friendly and easy.
 
 * Added Django Support and initialized files with litesql database file.
 * Rewrote digitalocean into one file, added old code for reference.
+* Added droplet information getting.
 * DigitalOcean droplet information
+* Moved api to django digitalocean app.
 
 
 

@@ -1,37 +1,37 @@
-DashServ v0.1.2
-
-Please Note: This is an pre-release, and is currently unstable.
-
-https://trello.com/b/liOZfwB8/dashserv <--- Trello Board (for ideas and progress)
+DashServ v0.1.3 - Unstable Development Build
 
 What is DashServ?
+------------------
 
-DashServ is an all-in-one command line productivity suite that is written for
-geeks, linux fans and for fans of the command line. It will help you maintain
-your servers, keep up to date on the status of your uptimes, be notified
-of important events related to your everyday life of you and your servers. It
-is your personal messenger, assistant, personal notifier, web scraper, and
-more. Free, open-source, and cross-platform.
+DashServ is an all-in-one system administration tool.
+
 
 Why DashServ?
+--------------
 
 DashServ is human-friendly, and designed to be easy to use as possible.
 
 * Manage DigitalOcean Servers - Start/Stop/Destroy/Snapshot/Backup
 
 
-Requirements
+Developer Requirements
+-------------------------
+
+* python2
+* virtualenv
+* requests
+* arrow
+* json
+
+
+End-User Requirements
 -------------
 
 All requirements can be installed via pip, easy_install or manually via python.
 * python2 (tested), (python3 not tested)
 * requests
-* docopt
 * json
 * arrow
-* Selenium - For future scraping support.
-
-Hardware: Computer, Internet Connection and a Keyboard.
 
 
 Current Features

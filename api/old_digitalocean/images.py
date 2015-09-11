@@ -1,1 +1,0 @@
-#URL: https://api.digitalocean.com/v2/images
