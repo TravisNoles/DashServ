@@ -3,7 +3,8 @@ DashServ v0.1.3 - Unstable Development Build
 What is DashServ?
 ------------------
 
-DashServ is an all-in-one system administration tool.
+DashServ is an all-in-one beautiful system administration tool. It allows
+for management of custom apps, game servers, web servers and more.
 
 
 Why DashServ?
