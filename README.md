@@ -1,6 +1,9 @@
 DashServ v0.1.0-pre1
 --------
 
+THIS REPO HAS MOVED: https://github.com/TravisNoles/DashServcmd
+
+
 Unstable Pre-Release
 
 
