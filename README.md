@@ -1,5 +1,8 @@
 DashServ v0.1.3 - Unstable Development Build
 
+THIS REPO HAS MOVED: https://github.com/TravisNoles/DashServcmd
+
+
 What is DashServ?
 ------------------
 
